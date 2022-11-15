@@ -27,7 +27,7 @@ func ECPointGen(x, y *big.Int) (point ECPoint) {
 	vY := new(big.Int)
 	vX.Set(x)
 	vY.Set(y)
-	point.X = vX // maybe simplified to point.X.Set() maybe?
+	point.X = vX 
 	point.Y = vY
 	return
 }
