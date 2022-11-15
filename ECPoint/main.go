@@ -27,10 +27,3 @@ func main() {
 	EC.PrintlnECPoint(db)
 	fmt.Print("Is double b on curve? ", EC.IsOnCurveCheck(db))
 }
-
-/*
-a=-1 b=3 p=97
-(3,6)
-(9*3-1)/18
-
-*/
