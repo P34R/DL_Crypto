@@ -10,27 +10,27 @@ import (
 )
 
 func main() {
-	// ---------------------------------------------TASK 2 WORK EXAMPLE ------------------------------
-	/*
-		a := EC.BasePointGGet()
+	//---------------------------------------------TASK 2 WORK EXAMPLE ------------------------------
 
-		fmt.Println("Scalar multiplication\ni * G (15,13)")
-		for i := 0; i < 20; i++ {
-			k := EC.ScalarMult(a, *big.NewInt(int64(i)))
-			fmt.Print(i, " ")
-			EC.PrintlnECPoint(k)
-		}
+	a := EC.BasePointGGet()
 
-		b := EC.ECPointGen(big.NewInt(2), big.NewInt(10))
-		a_pl_b := EC.AddECPoints(a, b)
-		fmt.Print("a(15,13) + b(2,10) = ")
-		EC.PrintlnECPoint(a_pl_b)
+	fmt.Println("Scalar multiplication\ni * G (15,13)")
+	for i := 0; i < 20; i++ {
+		k := EC.ScalarMult(a, *big.NewInt(int64(i)))
+		fmt.Print(i, " ")
+		EC.PrintlnECPoint(k)
+	}
 
-		fmt.Print("double b(2,10) = ")
-		db := EC.DoubleECPoints(b)
-		EC.PrintlnECPoint(db)
-		fmt.Print("Is double b on curve? ", EC.IsOnCurveCheck(db))
-	*/
+	b := EC.ECPointGen(big.NewInt(2), big.NewInt(10))
+	a_pl_b := EC.AddECPoints(a, b)
+	fmt.Print("a(15,13) + b(2,10) = ")
+	EC.PrintlnECPoint(a_pl_b)
+
+	fmt.Print("double b(2,10) = ")
+	db := EC.DoubleECPoints(b)
+	EC.PrintlnECPoint(db)
+	fmt.Println("Is double b on curve? ", EC.IsOnCurveCheck(db))
+
 	// ---------------------------------------------TASK 2 WORK EXAMPLE END --------------------------
 
 	// ---------------------------------------------TASK 3 WORK EXAMPLE ------------------------------
